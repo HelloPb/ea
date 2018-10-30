@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let mk of make">
+    <span class="text-primary">{{mk.name}}</span>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let md of mk.model">
+        <span class="text-danger">{{md.name}}</span>
+        <ul class="list-group">
+          <li class="list-group-item bg-light" *ngFor="let sh of md.show">{{sh.name}}</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
